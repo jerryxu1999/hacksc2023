@@ -1,0 +1,26 @@
+[
+  {
+    "planId": 0,
+    "name": "Loosen Up",
+    "description": "A quick stretch fit for any time of day.",
+    "workoutIds": [2, 5]
+  },
+  {
+    "planId": 1,
+    "name": "Deep Stretch",
+    "description": "A 5-minute workout perfect for a quick break or an end-of-day cool-down. Thorough enough to get your blood flowing and muscles loosened up.",
+    "workoutIds": [2, 3, 4, 5]
+  },
+  {
+    "planId": 2,
+    "name": "Killer Cardio",
+    "description": "An intense cardio workout to get your heart pumping. Repeat as many times as you'd like to get a longer workout.",
+    "workoutIds": [0, 1, 6, 7, 8, 9]
+  },
+  {
+    "planId": 3,
+    "name": "YOGA",
+    "description": "A quick energizing 10 minute standing yoga flow you can practice anywhere.",
+    "workoutIds": [10]
+  }
+]

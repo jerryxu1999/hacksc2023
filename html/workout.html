@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/workout.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+    <script src="/js/comparePose.js" ></script>
+</head>
+
+<body>
+  <div class="layer">
+    <header></header>
+    <main>
+      <div class="side-by-side">
+        <div class="tracked-video-container">
+          <video autoplay id="cam-video"></video>
+          <canvas id="cam-overlay-cvs" class="overlay-cvs"></canvas>
+        </div>
+        <div class="tracked-video-container">
+          <video autoplay controls id="ref-video" src=""></video>
+          <canvas id="ref-overlay-cvs" class="overlay-cvs"></canvas>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div id="info-layer" class="layer">
+    <div class="info-overlay">
+      <h3 id="comparison-result">Loading...</h3>
+      <h3>
+      <p>
+        <span id="plan-name" class="label"></span> &rarr; <span id="workout-name"></span>
+      </p>
+        <span class="label">Tips:</span>
+        <ul id="tips-list"></ul>
+      </p>
+      <p>
+        <span class="label">Speed:</span>
+        <select id="speed-select">
+          <option value="0.25">0.25x</option>
+          <option value="0.5">0.5x</option>
+          <option value="1.0" selected>Normal</option>
+          <option value="1.5">1.5x</option>
+          <option value="2.0">2x</option>
+        </select>
+      </p>
+    </div>
+  </div>
+  <script src="/js/edges.js"></script>
+  <script src="/js/PoseDrawer.js"></script>
+  <script src="/js/Tracker.js"></script>
+  <script src="/js/workout.js"></script>
+  <script src="/js/loadFragments.js"></script>
+</body>
+
+</html>
