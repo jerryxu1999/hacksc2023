@@ -56,3 +56,8 @@ Our webapp prototype is built statically with vanilla JS/HTML/CSS, with real-tim
 ## Video demo link:
 
 [https://github.com/danny-dirksen/hackscx-2023](https://github.com/danny-dirksen/hackscx-2023)
+
+## Collaboration With
+1. danny-dirksen
+2. Shalin0410
+3. USCJAKE
